@@ -22,6 +22,39 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN });
 
 //
 
+let labels = {};
+
+let colors = {};
+
+colors.ISSUE_BUG = 'D73A4A';
+colors.ISSUE_FEATURE = 'A2EEEF';
+
+colors.TAG_DUPE = 'CFD3D7';
+colors.TAG_GOODFIRST = '7057FF';
+colors.TAG_NEEDHELP = '008672';
+colors.TAG_NEEDINFO = 'D876E3';
+
+colors.TOPIC_DOCS = '0075CA';
+
+colors.RESULT_NOFIX = 'FFFFFF';
+
+colors.STATUS_TODO = 'ffcc00';
+colors.STATUS_ACTIVE = '0E8A16';
+colors.STATUS_PENDING = 'ff6600';
+colors.STATUS_DONE = '999999';
+
+colors.Z_0R = 'ff0000'
+colors.Z_1O = 'ff6600'
+colors.Z_2Y = 'ffcc00'
+colors.Z_3G = '62ff00'
+colors.Z_4C = '00ffc3'
+colors.Z_5B = '00ccff'
+colors.Z_6I = '0048ff'
+colors.Z_7V = '8000ff'
+colors.Z_8P = 'ff00d9'
+
+//
+
 const App = {};
 
 App.Args = { loglevel: 'trace', logfancy: true };

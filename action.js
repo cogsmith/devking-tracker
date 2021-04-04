@@ -53,6 +53,12 @@ colors.Z_6I = '0048ff'
 colors.Z_7V = '8000ff'
 colors.Z_8P = 'ff00d9'
 
+colors.Y_00 = '000000';
+colors.Y_1R = 'FF0000';
+colors.Y_2G = '00FF00';
+colors.Y_3B = '0000FF';
+colors.Y_FF = 'FFFFFF';
+
 //
 
 const App = {};

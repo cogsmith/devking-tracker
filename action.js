@@ -94,15 +94,15 @@ App.Main = async function () {
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
 
-    for (let i=0;i<labelsdata.data.length;i++) {
+    for (let i=0;i<labelsdata.data.length;i++) {        
         let x = labelsdata.data[i];
         if (colors[x.name]==x.color.toUpperCase()) { labels[x.name] = true; return; }
-        await octokit.rest.issues.deleteLabel({owner:repo.owner,repo:repo.repo,name:x.name});
+        await octokit.rest.issues.deleteLabel({owner:REPO.owner,repo:REPO.repo,name:x.name});
     }
 
     Object.keys(colors).forEach(x=>{
         if (!labels[x]) {
-            octokit.rest.issues.createLabel({owner:repo.owner,repo:repo.repo,name:x,color:colors[x]});
+            octokit.rest.issues.createLabel({owner:REPO.owner,repo:REPO.repo,name:x,color:colors[x]});
         }
     });
 }

@@ -27,7 +27,7 @@ let labels = {};
 let colors = {};
 
 colors.ISSUE_BUG = 'FF4444';
-colors.ISSUE_FEATURE = '0052CC';
+colors.ISSUE_FEATURE = '1D76DB' //'0052CC';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '7057FF';

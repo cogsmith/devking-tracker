@@ -27,14 +27,14 @@ let labels = {};
 let colors = {};
 
 colors.ISSUE_BUG = 'FF4444';
-colors.ISSUE_FEATURE = '1D76DB' //'0052CC';
+colors.ISSUE_FEATURE = '0052CC';
 
 colors.TAG_DUPE = 'CCCCCC';
-colors.TAG_GOODFIRST = 'FEF2C0';
+colors.TAG_GOODFIRST = '35C335';
 colors.TAG_NEEDHELP = 'D93F0B';
 colors.TAG_NEEDINFO = '5319E7';
 
-colors.TOPIC_DOCS = '0052CC';
+colors.TOPIC_DOCS = '1D76DB';
 
 colors.RESULT_NOFIX = 'FFFFFF';
 

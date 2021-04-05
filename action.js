@@ -66,24 +66,6 @@ if (0) {
     colors.ZZ_COLOR_GRAY_12 = 'CCCCCC';
     colors.ZZ_COLOR_GRAY_15 = 'FFFFFF';
 
-    colors.ZZ_COLOR_0R = 'ff0000'
-    colors.ZZ_COLOR_1O = 'ff6600'
-    colors.ZZ_COLOR_2Y = 'ffcc00'
-    colors.ZZ_COLOR_3G = '62ff00'
-    colors.ZZ_COLOR_4C = '00ffc3'
-    colors.ZZ_COLOR_5B = '00ccff'
-    colors.ZZ_COLOR_6I = '0048ff'
-    colors.ZZ_COLOR_7V = '8000ff'
-    colors.ZZ_COLOR_8P = 'ff00d9'
-
-    colors.ZZ_GH_DARK_0R = 'B60205'
-    colors.ZZ_GH_DARK_1O = 'D93F0B'
-    colors.ZZ_GH_DARK_2Y = 'FBCA04'
-    colors.ZZ_GH_DARK_3G = '0E8A16'
-    colors.ZZ_GH_DARK_4C = '006B75'
-    colors.ZZ_GH_DARK_5B = '1D76DB'
-    colors.ZZ_GH_DARK_6I = '0052CC'
-    colors.ZZ_GH_DARK_7V = '5319E7'
 
     colors.ZZ_GH_LITE_0R = 'E99695'
     colors.ZZ_GH_LITE_1O = 'F9D0C4'
@@ -94,6 +76,28 @@ if (0) {
     colors.ZZ_GH_LITE_6I = 'BFD4F2'
     colors.ZZ_GH_LITE_7V = 'D4C5F9'
 }
+
+
+colors.ZZ_COLOR_0R = 'ff0000'
+colors.ZZ_COLOR_1O = 'ff6600'
+colors.ZZ_COLOR_2Y = 'ffcc00'
+colors.ZZ_COLOR_3G = '62ff00'
+colors.ZZ_COLOR_4C = '00ffc3'
+colors.ZZ_COLOR_5B = '00ccff'
+colors.ZZ_COLOR_6I = '0048ff'
+colors.ZZ_COLOR_7V = '8000ff'
+colors.ZZ_COLOR_8P = 'ff00d9'
+
+colors.ZZ_GH_DARK_0R = 'B60205'
+colors.ZZ_GH_DARK_1O = 'D93F0B'
+colors.ZZ_GH_DARK_2Y = 'FBCA04'
+colors.ZZ_GH_DARK_3G = '0E8A16'
+colors.ZZ_GH_DARK_4C = '006B75'
+colors.ZZ_GH_DARK_5B = '1D76DB'
+colors.ZZ_GH_DARK_6I = '0052CC'
+colors.ZZ_GH_DARK_7V = '5319E7'
+
+
 
 //
 

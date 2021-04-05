@@ -29,9 +29,11 @@ let labels = {};
 
 colors.ISSUE_DEV = '00EEFF';
 colors.ISSUE_BUG = 'FF0011';
+colors.ISSUE_DOCS = 'DDDDDD';
 colors.ISSUE_TASK = '000000';
 colors.ISSUE_FEATURE = '0055CC';
 colors.ISSUE_SUPPORT = 'FF5500';
+colors.ISSUE_SECURITY = 'FF0011';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '66FF00';

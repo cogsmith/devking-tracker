@@ -35,7 +35,7 @@ colors.TAG_NEEDHELP = 'FF5500';
 colors.TAG_NEEDINFO = 'FF00DD';
 colors.TAG_NOFIX = 'CCCCCC';
 
-colors.TOPIC_APP = 'FFFFFF';
+colors.TOPIC_APP = '000000';
 colors.TOPIC_BACKEND = 'FFFFFF';
 colors.TOPIC_BUILD = 'FFFFFF';
 colors.TOPIC_CODE = 'FFFFFF';

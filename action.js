@@ -53,11 +53,9 @@ colors.STATUS_DONE = '666666';
 colors.PRIORITY_URGENT = 'FF0011';
 
 if (0) {
-    colors.ZZ_COLOR_00 = '000000';
-    colors.ZZ_COLOR_1R = 'FF0000';
-    colors.ZZ_COLOR_2G = '00FF00';
-    colors.ZZ_COLOR_3B = '0000FF';
-    colors.ZZ_COLOR_FF = 'FFFFFF';
+    colors.ZZ_RGB_1_R = 'FF0000';
+    colors.ZZ_RGB_2_G = '00FF00';
+    colors.ZZ_RGB_3_B = '0000FF';
 
     colors.ZZ_COLOR_GRAY_00 = '000000';
     colors.ZZ_COLOR_GRAY_03 = '333333';
@@ -66,38 +64,34 @@ if (0) {
     colors.ZZ_COLOR_GRAY_12 = 'CCCCCC';
     colors.ZZ_COLOR_GRAY_15 = 'FFFFFF';
 
+    colors.ZZ_COLOR_1_R = 'ff0000'
+    colors.ZZ_COLOR_2_O = 'ff6600'
+    colors.ZZ_COLOR_3_Y = 'ffcc00'
+    colors.ZZ_COLOR_4_G = '62ff00'
+    colors.ZZ_COLOR_5_C = '00ffc3'
+    colors.ZZ_COLOR_6_B = '00ccff'
+    colors.ZZ_COLOR_7_I = '0048ff'
+    colors.ZZ_COLOR_8_V = '8000ff'
+    colors.ZZ_COLOR_9_P = 'ff00d9'
 
-    colors.ZZ_GH_LITE_0R = 'E99695'
-    colors.ZZ_GH_LITE_1O = 'F9D0C4'
-    colors.ZZ_GH_LITE_2Y = 'FEF2C0'
-    colors.ZZ_GH_LITE_3G = 'C2E0C6'
-    colors.ZZ_GH_LITE_4C = 'BFDADC'
-    colors.ZZ_GH_LITE_5B = 'C5DEF5'
-    colors.ZZ_GH_LITE_6I = 'BFD4F2'
-    colors.ZZ_GH_LITE_7V = 'D4C5F9'
+    colors.ZZ_GH_DARK_0_R = 'B60205'
+    colors.ZZ_GH_DARK_1_O = 'D93F0B'
+    colors.ZZ_GH_DARK_2_Y = 'FBCA04'
+    colors.ZZ_GH_DARK_3_G = '0E8A16'
+    colors.ZZ_GH_DARK_4_C = '006B75'
+    colors.ZZ_GH_DARK_5_B = '1D76DB'
+    colors.ZZ_GH_DARK_6_I = '0052CC'
+    colors.ZZ_GH_DARK_7_V = '5319E7'
+
+    colors.ZZ_GH_LITE_0_R = 'E99695'
+    colors.ZZ_GH_LITE_1_O = 'F9D0C4'
+    colors.ZZ_GH_LITE_2_Y = 'FEF2C0'
+    colors.ZZ_GH_LITE_3_G = 'C2E0C6'
+    colors.ZZ_GH_LITE_4_C = 'BFDADC'
+    colors.ZZ_GH_LITE_5_B = 'C5DEF5'
+    colors.ZZ_GH_LITE_6_I = 'BFD4F2'
+    colors.ZZ_GH_LITE_7_V = 'D4C5F9'
 }
-
-
-colors.ZZ_COLOR_0R = 'ff0000'
-colors.ZZ_COLOR_1O = 'ff6600'
-colors.ZZ_COLOR_2Y = 'ffcc00'
-colors.ZZ_COLOR_3G = '62ff00'
-colors.ZZ_COLOR_4C = '00ffc3'
-colors.ZZ_COLOR_5B = '00ccff'
-colors.ZZ_COLOR_6I = '0048ff'
-colors.ZZ_COLOR_7V = '8000ff'
-colors.ZZ_COLOR_8P = 'ff00d9'
-
-colors.ZZ_GH_DARK_0R = 'B60205'
-colors.ZZ_GH_DARK_1O = 'D93F0B'
-colors.ZZ_GH_DARK_2Y = 'FBCA04'
-colors.ZZ_GH_DARK_3G = '0E8A16'
-colors.ZZ_GH_DARK_4C = '006B75'
-colors.ZZ_GH_DARK_5B = '1D76DB'
-colors.ZZ_GH_DARK_6I = '0052CC'
-colors.ZZ_GH_DARK_7V = '5319E7'
-
-
 
 //
 

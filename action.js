@@ -7,13 +7,11 @@ const REPO = { owner: GITHUB_REPOTEAM, repo: GITHUB_REPONAME };
 //
 
 const fs = require('fs');
-
 const _ = require('lodash');
 const pino = require('pino');
 const execa = require('execa');
 const chalk = require('chalk');
 const semver = require('semver');
-
 const { Octokit } = require("@octokit/rest");
 
 //
@@ -29,7 +27,7 @@ colors.ISSUE_DEV = '00EEFF';
 colors.ISSUE_BUG = 'FF0011';
 colors.ISSUE_TASK = '000000';
 colors.ISSUE_FEATURE = '0055CC';
-colors.ISSUE_SUPPORT = 'FF5500';
+colors.ISSUE_SUPPORT = 'FFAA00';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '66FF00';

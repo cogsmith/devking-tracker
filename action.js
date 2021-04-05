@@ -56,17 +56,17 @@ if (0) {
     colors.ZZ_COLOR_GRAY_09 = '999999';
     colors.ZZ_COLOR_GRAY_12 = 'CCCCCC';
     colors.ZZ_COLOR_GRAY_15 = 'FFFFFF';
-
-    colors.ZZ_COLOR_0R = 'ff0000'
-    colors.ZZ_COLOR_1O = 'ff6600'
-    colors.ZZ_COLOR_2Y = 'ffcc00'
-    colors.ZZ_COLOR_3G = '62ff00'
-    colors.ZZ_COLOR_4C = '00ffc3'
-    colors.ZZ_COLOR_5B = '00ccff'
-    colors.ZZ_COLOR_6I = '0048ff'
-    colors.ZZ_COLOR_7V = '8000ff'
-    colors.ZZ_COLOR_8P = 'ff00d9'
 }
+
+colors.ZZ_COLOR_0R = 'ff0000'
+colors.ZZ_COLOR_1O = 'ff6600'
+colors.ZZ_COLOR_2Y = 'ffcc00'
+colors.ZZ_COLOR_3G = '62ff00'
+colors.ZZ_COLOR_4C = '00ffc3'
+colors.ZZ_COLOR_5B = '00ccff'
+colors.ZZ_COLOR_6I = '0048ff'
+colors.ZZ_COLOR_7V = '8000ff'
+colors.ZZ_COLOR_8P = 'ff00d9'
 
 colors.ZZ_GH_DARK_0R = 'B60205'
 colors.ZZ_GH_DARK_1O = 'D93F0B'

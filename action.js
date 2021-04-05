@@ -134,7 +134,7 @@ App.Main = async function () {
         //console.log(x);
         if (colors[x.name] == x.color.toUpperCase()) { labels[x.name] = true; continue; }
         console.log('DELETE = ' + x.name);
-        await octokit.rest.issues.deleteLabel({ owner: REPO.owner, repo: REPO.repo, name: x.name });
+        octokit.rest.issues.deleteLabel({ owner: REPO.owner, repo: REPO.repo, name: x.name });
     }
 
     console.log({ COLORS: colors, LABELS: labels });

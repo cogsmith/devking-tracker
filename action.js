@@ -38,13 +38,13 @@ colors.TAG_NEEDHELP = 'D93F0B';
 colors.TAG_NEEDINFO = '5319E7';
 
 //colors.TOPIC_REPO = 'FFFFFF';
-colors.TOPIC_DOCS = 'FFFFFF';
-colors.TOPIC_LIBS = 'FFFFFF';
-colors.TOPIC_BUILD = 'FFFFFF';
 colors.TOPIC_APP = 'FFFFFF';
 colors.TOPIC_BACKEND = 'FFFFFF';
-colors.TOPIC_UI = 'FFFFFF';
+colors.TOPIC_BUILD = 'FFFFFF';
 colors.TOPIC_DATA = 'FFFFFF';
+colors.TOPIC_DOCS = 'FFFFFF';
+colors.TOPIC_LIBS = 'FFFFFF';
+colors.TOPIC_UI = 'FFFFFF';
 
 colors.RESULT_NOFIX = 'CCCCCC';
 

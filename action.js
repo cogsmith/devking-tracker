@@ -22,9 +22,8 @@ const octokit = new Octokit({ auth: GITHUB_TOKEN });
 
 //
 
-let labels = {};
-
 let colors = {};
+let labels = {};
 
 colors.ISSUE_DEV = '00EEFF';
 colors.ISSUE_BUG = 'FF4444';

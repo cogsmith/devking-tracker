@@ -137,9 +137,19 @@ App.Main = async function () {
     for (let i = 0; i < labelsdata.data.length; i++) {
         let x = labelsdata.data[i];
         //console.log(x);
-        if (colors[x.name] == x.color.toUpperCase()) { labels[x.name] = true; continue; }
-        await octokit.rest.issues.deleteLabel({ owner: REPO.owner, repo: REPO.repo, name: x.name });
-        LOG.INFO('DeleteLabel: ' + x.name);
+        if (colors[x.name]) {
+            labels[x.name] = true;
+
+            if (colors[x.name] == x.color.toUpperCase()) { continue; }
+            else {
+                LOG.INFO('UpdateLabel: ' + x.name + ' => ' + colors[x.name]);
+                await octokit.rest.issues.updateLabel({ owner: REPO.owner, repo: REPO.repo, name: x.name, color: colors[x.name] });
+            }
+        }
+        else {
+            LOG.INFO('DeleteLabel: ' + x.name);
+            await octokit.rest.issues.deleteLabel({ owner: REPO.owner, repo: REPO.repo, name: x.name });
+        }
     }
 
     let colorkeys = Object.keys(colors);

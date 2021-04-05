@@ -27,21 +27,21 @@ let labels = {};
 let colors = {};
 
 colors.ISSUE_BUG = 'FF0000';
-colors.ISSUE_FEATURE = '0000FF';
+colors.ISSUE_FEATURE = '0052CC';
 
 colors.TAG_DUPE = 'CFD3D7';
 colors.TAG_GOODFIRST = '7057FF';
 colors.TAG_NEEDHELP = '008672';
 colors.TAG_NEEDINFO = 'D876E3';
 
-colors.TOPIC_DOCS = '0075CA';
+colors.TOPIC_DOCS = '006B75';
 
 colors.RESULT_NOFIX = 'FFFFFF';
 
 colors.STATUS_TODO = 'FBCA04';
 colors.STATUS_ACTIVE = '0E8A16';
-colors.STATUS_PENDING = 'ff6600';
-colors.STATUS_DONE = '999999';
+colors.STATUS_PENDING = 'D93F0B';
+colors.STATUS_DONE = 'AAAAAA';
 
 colors.Z_0R = 'ff0000'
 colors.Z_1O = 'ff6600'

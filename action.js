@@ -143,6 +143,8 @@ App.Main = async function () {
             octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] });
         }
     });
+
+    setTimeout(function () { LOG.INFO('TIMEOUT'); }, 1000 * 10);
 }
 
 //

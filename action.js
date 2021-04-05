@@ -155,9 +155,9 @@ App.SetupLabels = async function () {
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
     for (let i = 0; i < labelsdata.data.length; i++) {
         let x = labelsdata.data[i];
+        LOG.DEBUG('CheckLabel: ' + x.name);
         if (colors[x.name]) {
             labels[x.name] = true;
-            LOG.DEBUG('CheckLabel: ' + x.name);
 
             if (colors[x.name] == x.color.toUpperCase()) { continue; }
             else {

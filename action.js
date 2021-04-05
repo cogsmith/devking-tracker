@@ -40,8 +40,23 @@ colors.RESULT_NOFIX = 'FFFFFF';
 
 colors.STATUS_TODO = 'FBCA04';
 colors.STATUS_ACTIVE = '0E8A16';
-colors.STATUS_PENDING = 'D93F0B';
+colors.STATUS_PENDING = '5319E7';
 colors.STATUS_DONE = 'AAAAAA';
+
+colors.W_1 = '111111';
+colors.W_2 = '222222';
+colors.W_3 = '333333';
+colors.W_4 = '444444';
+colors.W_5 = '555555';
+colors.W_6 = '666666';
+colors.W_7 = '777777';
+colors.W_8 = '888888';
+colors.W_9 = '999999';
+colors.W_A = 'AAAAAA';
+colors.W_B = 'BBBBBB';
+colors.W_C = 'CCCCCC';
+colors.W_D = 'DDDDDD';
+colors.W_E = 'EEEEEE';
 
 colors.Z_0R = 'ff0000'
 colors.Z_1O = 'ff6600'

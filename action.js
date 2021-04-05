@@ -26,22 +26,35 @@ let labels = {};
 
 let colors = {};
 
+colors.ISSUE_DEV = '00EEFF';
 colors.ISSUE_BUG = 'FF4444';
+colors.ISSUE_TASK = '000000';
 colors.ISSUE_FEATURE = '0052CC';
+colors.ISSUE_SUPPORT = '000000';
 
 colors.TAG_DUPE = 'CCCCCC';
-colors.TAG_GOODFIRST = '35C335';
+colors.TAG_GOODFIRST = '66FF00';
 colors.TAG_NEEDHELP = 'D93F0B';
 colors.TAG_NEEDINFO = '5319E7';
 
+colors.TOPIC_REPO = '000000';
 colors.TOPIC_DOCS = '1D76DB';
+colors.TOPIC_LIBS = '000000';
+colors.TOPIC_BUILD = '000000';
+colors.TOPIC_APP = '000000';
+colors.TOPIC_BACKEND = '000000';
 
 colors.RESULT_NOFIX = 'FFFFFF';
 
 colors.STATUS_TODO = 'FFEE00';
 colors.STATUS_ACTIVE = '0E8A16';
-colors.STATUS_PENDING = 'BF2ACF';
+colors.STATUS_PENDING = 'FF00DD';
 colors.STATUS_DONE = '666666';
+
+colors.PRIORITY_LOW = '000000';
+colors.PRIORITY_HIGH = '000000';
+colors.PRIORITY_URGENT = '000000';
+colors.PRIORITY_CRITICAL = '000000';
 
 if (0) {
     colors.ZZ_COLOR_00 = '000000';

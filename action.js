@@ -33,12 +33,12 @@ colors.ISSUE_DOCS = '999999';
 colors.ISSUE_TASK = '000000';
 colors.ISSUE_FEATURE = '0055CC';
 colors.ISSUE_SUPPORT = 'FF5500';
-colors.ISSUE_SECURITY = 'FF0011';
+colors.ISSUE_SECURITY = 'FF00DD';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '66FF00';
 colors.TAG_NEEDHELP = 'FF5500';
-colors.TAG_NEEDINFO = 'FF00DD';
+colors.TAG_NEEDINFO = 'BB1199';
 colors.TAG_NOFIX = 'CCCCCC';
 
 colors.TOPIC_APP = 'FFFFFF';
@@ -53,7 +53,7 @@ colors.TOPIC_UI = 'FFFFFF';
 
 colors.STATUS_TODO = 'FFEE00';
 colors.STATUS_ACTIVE = '118811';
-colors.STATUS_PENDING = 'FF00DD';
+colors.STATUS_PENDING = 'BB1199';
 colors.STATUS_DONE = '666666';
 
 colors.PRIORITY_URGENT = 'FF0011';

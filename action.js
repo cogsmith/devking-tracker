@@ -35,7 +35,7 @@ colors.TAG_NEEDHELP = 'FF5500';
 colors.TAG_NEEDINFO = 'FF00DD';
 colors.TAG_NOFIX = 'CCCCCC';
 
-colors.TOPIC_APP = '000000';
+colors.TOPIC_APP = 'FFFFFF';
 colors.TOPIC_BACKEND = 'FFFFFF';
 colors.TOPIC_BUILD = 'FFFFFF';
 colors.TOPIC_CODE = 'FFFFFF';
@@ -133,12 +133,11 @@ App.Main = async function () {
     LOG.DEBUG('App.Main');
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
-
     for (let i = 0; i < labelsdata.data.length; i++) {
         let x = labelsdata.data[i];
-        //console.log(x);
         if (colors[x.name]) {
             labels[x.name] = true;
+            LOG.DEBUG('Label: ' + x.name);
 
             if (colors[x.name] == x.color.toUpperCase()) { continue; }
             else {

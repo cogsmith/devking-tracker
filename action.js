@@ -36,17 +36,17 @@ colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '66FF00';
 colors.TAG_NEEDHELP = 'DD5500';
 colors.TAG_NEEDINFO = 'FF00DD';
+colors.TAG_NOFIX = 'CCCCCC';
 
-//colors.TOPIC_REPO = 'FFFFFF';
 colors.TOPIC_APP = 'FFFFFF';
 colors.TOPIC_BACKEND = 'FFFFFF';
 colors.TOPIC_BUILD = 'FFFFFF';
+colors.TOPIC_CODE = 'FFFFFF';
 colors.TOPIC_DATA = 'FFFFFF';
 colors.TOPIC_DOCS = 'FFFFFF';
 colors.TOPIC_LIBS = 'FFFFFF';
+colors.TOPIC_REPO = 'FFFFFF';
 colors.TOPIC_UI = 'FFFFFF';
-
-colors.RESULT_NOFIX = 'CCCCCC';
 
 colors.STATUS_TODO = 'FFEE00';
 colors.STATUS_ACTIVE = '118811';

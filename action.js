@@ -32,7 +32,7 @@ colors.ISSUE_FEATURE = '0052CC';
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '7057FF';
 colors.TAG_NEEDHELP = 'D93F0B';
-colors.TAG_NEEDINFO = 'bf2acf';
+colors.TAG_NEEDINFO = '5319E7';
 
 colors.TOPIC_DOCS = '006B75';
 
@@ -40,7 +40,7 @@ colors.RESULT_NOFIX = 'FFFFFF';
 
 colors.STATUS_TODO = 'FBCA04';
 colors.STATUS_ACTIVE = '0E8A16';
-colors.STATUS_PENDING = '5319E7';
+colors.STATUS_PENDING = 'BF2ACF';
 colors.STATUS_DONE = '666666';
 
 if (0) {

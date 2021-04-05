@@ -6,7 +6,7 @@ const REPO = { owner: GITHUB_REPOTEAM, repo: GITHUB_REPONAME };
 
 //
 
-process.onEXIT = function () { }; process.on('exit', function () { process.ONEXIT(); });
+process.onEXIT = function () { }; process.on('exit', function () { process.onEXIT(); });
 
 //
 

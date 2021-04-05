@@ -139,11 +139,13 @@ App.Main = async function () {
 
     console.log({ COLORS: colors, LABELS: labels });
 
-    Object.keys(colors).forEach(x => {
+    let colorkeys = Object.keys(colors);
+    for (let i = 0; i < colorkeys; i++) {
+        let color = colorkeys[i]; let x = colors[color];
         if (!labels[x]) {
-            octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] });
+            await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] });
         }
-    });
+    }
 
     setTimeout(function () { LOG.INFO('TIMEOUT'); }, 1000 * 10);
 }

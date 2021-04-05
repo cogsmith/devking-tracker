@@ -140,7 +140,7 @@ App.Main = async function () {
     console.log({ COLORS: colors, LABELS: labels });
 
     let colorkeys = Object.keys(colors);
-    for (let i = 0; i < colorkeys; i++) {
+    for (let i = 0; i < colorkeys.length; i++) {
         let color = colorkeys[i]; let x = colors[color];
         if (!labels[x]) {
             await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] });

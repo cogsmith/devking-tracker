@@ -26,14 +26,14 @@ let colors = {};
 let labels = {};
 
 colors.ISSUE_DEV = '00EEFF';
-colors.ISSUE_BUG = 'FF4444';
+colors.ISSUE_BUG = 'FF0011';
 colors.ISSUE_TASK = '000000';
 colors.ISSUE_FEATURE = '0055CC';
-colors.ISSUE_SUPPORT = 'DD5500';
+colors.ISSUE_SUPPORT = 'FF5500';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '66FF00';
-colors.TAG_NEEDHELP = 'DD5500';
+colors.TAG_NEEDHELP = 'FF5500';
 colors.TAG_NEEDINFO = 'FF00DD';
 colors.TAG_NOFIX = 'CCCCCC';
 
@@ -52,7 +52,7 @@ colors.STATUS_ACTIVE = '118811';
 colors.STATUS_PENDING = 'FF00DD';
 colors.STATUS_DONE = '666666';
 
-colors.PRIORITY_URGENT = 'FF4444';
+colors.PRIORITY_URGENT = 'FF0011';
 
 if (0) {
     colors.ZZ_COLOR_00 = '000000';

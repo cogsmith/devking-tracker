@@ -143,7 +143,7 @@ App.SetupProject = function () {
     LOG.DEBUG('App.SetupLabels');
 }
 
-App.CheckLabels = async function () {
+App.SetupLabels = async function () {
     LOG.DEBUG('App.SetupLabels');
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);

@@ -29,13 +29,13 @@ let colors = {};
 colors.ISSUE_DEV = '00EEFF';
 colors.ISSUE_BUG = 'FF4444';
 colors.ISSUE_TASK = '000000';
-colors.ISSUE_FEATURE = '0052CC';
-colors.ISSUE_SUPPORT = '000000';
+colors.ISSUE_FEATURE = '0055CC';
+colors.ISSUE_SUPPORT = 'DD5500';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '66FF00';
-colors.TAG_NEEDHELP = 'D93F0B';
-colors.TAG_NEEDINFO = '5319E7';
+colors.TAG_NEEDHELP = 'DD5500';
+colors.TAG_NEEDINFO = 'FF00DD';
 
 //colors.TOPIC_REPO = 'FFFFFF';
 colors.TOPIC_APP = 'FFFFFF';
@@ -49,7 +49,7 @@ colors.TOPIC_UI = 'FFFFFF';
 colors.RESULT_NOFIX = 'CCCCCC';
 
 colors.STATUS_TODO = 'FFEE00';
-colors.STATUS_ACTIVE = '0E8A16';
+colors.STATUS_ACTIVE = '118811';
 colors.STATUS_PENDING = 'FF00DD';
 colors.STATUS_DONE = '666666';
 

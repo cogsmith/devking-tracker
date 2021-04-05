@@ -26,10 +26,10 @@ let labels = {};
 
 let colors = {};
 
-colors.ISSUE_BUG = 'FF0000';
+colors.ISSUE_BUG = 'FF4444';
 colors.ISSUE_FEATURE = '0052CC';
 
-colors.TAG_DUPE = 'CFD3D7';
+colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '7057FF';
 colors.TAG_NEEDHELP = '008672';
 colors.TAG_NEEDINFO = 'D876E3';
@@ -41,7 +41,7 @@ colors.RESULT_NOFIX = 'FFFFFF';
 colors.STATUS_TODO = 'FBCA04';
 colors.STATUS_ACTIVE = '0E8A16';
 colors.STATUS_PENDING = '5319E7';
-colors.STATUS_DONE = 'AAAAAA';
+colors.STATUS_DONE = '666666';
 
 colors.Y_00 = '000000';
 colors.Y_1R = 'FF0000';
@@ -49,12 +49,14 @@ colors.Y_2G = '00FF00';
 colors.Y_3B = '0000FF';
 colors.Y_FF = 'FFFFFF';
 
+if (0) {
 colors.ZZ_COLOR_GRAY_00 = '000000';
 colors.ZZ_COLOR_GRAY_03 = '333333';
 colors.ZZ_COLOR_GRAY_06 = '666666';
 colors.ZZ_COLOR_GRAY_09 = '999999';
 colors.ZZ_COLOR_GRAY_12 = 'CCCCCC';
 colors.ZZ_COLOR_GRAY_15 = 'FFFFFF';
+}
 
 colors.ZZ_GH_DARK_0R = 'B60205'
 colors.ZZ_GH_DARK_1O = 'D93F0B'

@@ -6,6 +6,10 @@ const REPO = { owner: GITHUB_REPOTEAM, repo: GITHUB_REPONAME };
 
 //
 
+process.onEXIT = function () { }; process.on('exit', function () { process.ONEXIT(); });
+
+//
+
 const fs = require('fs');
 const _ = require('lodash');
 const pino = require('pino');
@@ -123,6 +127,8 @@ App.Init = async function () {
     LOG.DEBUG('Node.Args: ' + chalk.white(App.Info('Node.Args')));
     LOG.DEBUG('App.Init');
 
+    process.onEXIT = function () { LOG.DEBUG('App.Exit'); };
+
     // Object.keys(process.env).sort().forEach(x => { if (x.startsWith('GITHUB')) { LOG.TRACE(x + ': ' + process.env[x]); } });
 
     LOG.DEBUG('App.InitDone');
@@ -140,7 +146,7 @@ App.Main = async function () {
 //
 
 App.SetupProject = function () {
-    LOG.DEBUG('App.SetupLabels');
+    LOG.DEBUG('App.SetupProject');
 }
 
 App.SetupLabels = async function () {

@@ -31,8 +31,8 @@ colors.ISSUE_FEATURE = '0052CC';
 
 colors.TAG_DUPE = 'CCCCCC';
 colors.TAG_GOODFIRST = '7057FF';
-colors.TAG_NEEDHELP = '008672';
-colors.TAG_NEEDINFO = 'D876E3';
+colors.TAG_NEEDHELP = 'D93F0B';
+colors.TAG_NEEDINFO = 'bf2acf';
 
 colors.TOPIC_DOCS = '006B75';
 

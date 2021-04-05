@@ -59,6 +59,24 @@ colors.Y_2G = '00FF00';
 colors.Y_3B = '0000FF';
 colors.Y_FF = 'FFFFFF';
 
+colors.XDARK_0R = 'B60205'
+colors.XDARK_1O = 'D93F0B'
+colors.XDARK_2Y = 'FBCA04'
+colors.XDARK_3G = '0E8A16'
+colors.XDARK_4C = '006B75'
+colors.XDARK_5B = '1D76DB'
+colors.XDARK_6I = '0052CC'
+colors.XDARK_7V = '5319E7'
+
+colors.XLITE_0R = 'E99695'
+colors.XLITE_1O = 'F9D0C4'
+colors.XLITE_2Y = 'FEF2C0'
+colors.XLITE_3G = 'C2E0C6'
+colors.XLITE_4C = 'BFDADC'
+colors.XLITE_5B = 'C5DEF5'
+colors.XLITE_6I = 'BFD4F2'
+colors.XLITE_7V = 'D4C5F9'
+
 //
 
 const App = {};

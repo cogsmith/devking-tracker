@@ -132,12 +132,26 @@ App.Init = async function () {
 App.Main = async function () {
     LOG.DEBUG('App.Main');
 
+    App.SetupProject();
+    App.SetupLabels();
+
+}
+
+//
+
+App.SetupProject = function () {
+    LOG.DEBUG('App.SetupLabels');
+}
+
+App.CheckLabels = async function () {
+    LOG.DEBUG('App.SetupLabels');
+
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
     for (let i = 0; i < labelsdata.data.length; i++) {
         let x = labelsdata.data[i];
         if (colors[x.name]) {
             labels[x.name] = true;
-            LOG.DEBUG('Label: ' + x.name);
+            LOG.DEBUG('CheckLabel: ' + x.name);
 
             if (colors[x.name] == x.color.toUpperCase()) { continue; }
             else {

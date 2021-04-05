@@ -147,7 +147,7 @@ App.Main = async function () {
         }
     }
 
-    setTimeout(function () { LOG.INFO('TIMEOUT'); }, 1000 * 10);
+    setTimeout(function () { LOG.INFO('TIMEOUT'); }, 1000 * 1);
 }
 
 //

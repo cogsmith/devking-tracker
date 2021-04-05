@@ -1,7 +1,8 @@
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_WORKFLOW = process.env.GITHUB_WORKFLOW;
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
 const GITHUB_REPOTEAM = GITHUB_REPOSITORY.split('/')[0];
 const GITHUB_REPONAME = GITHUB_REPOSITORY.split('/')[1];
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO = { owner: GITHUB_REPOTEAM, repo: GITHUB_REPONAME };
 
 //
@@ -143,6 +144,7 @@ App.Main = async function () {
     App.SetupProject();
     App.SetupLabels();
 
+    App.DeletePastRuns(GITHUB_WORKFLOW);
 }
 
 //
@@ -182,6 +184,18 @@ App.SetupLabels = async function () {
             LOG.INFO('CreateLabel: ' + x);
             try { await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] }); } catch (ex) { LOG.ERROR(ex); }
         }
+    }
+}
+
+//
+
+App.DeletePastRuns = async function (workflow) {
+    let runs = await octokit.rest.actions.listWorkflowRunsForRepo({ owner: REPO.owner, repo: REPO.repo, per_page: 100 });
+    for (let i = 0; i < runs.data.workflow_runs.length; i++) {
+        let run = runs.data.workflow_runs[i];
+        if (workflow && run.name != workflow) { continue; }
+        LOG.INFO('DeleteRun: ' + run.id);
+        try { await octokit.rest.actions.deleteWorkflowRun({ owner: REPO.owner, repo: REPO.repo, run_id: run.id }); } catch (ex) { LOG.ERROR(ex); }
     }
 }
 

@@ -52,7 +52,7 @@ colors.STATUS_ACTIVE = '118811';
 colors.STATUS_PENDING = 'FF00DD';
 colors.STATUS_DONE = '666666';
 
-colors.PRIORITY_URGENT = 'FF00DD';
+colors.PRIORITY_URGENT = 'FF4444';
 
 if (0) {
     colors.ZZ_COLOR_00 = '000000';

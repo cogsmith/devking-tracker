@@ -38,7 +38,7 @@ colors.TOPIC_DOCS = '1D76DB';
 
 colors.RESULT_NOFIX = 'FFFFFF';
 
-colors.STATUS_TODO = 'FBCA04';
+colors.STATUS_TODO = 'FFEE00';
 colors.STATUS_ACTIVE = '0E8A16';
 colors.STATUS_PENDING = 'BF2ACF';
 colors.STATUS_DONE = '666666';

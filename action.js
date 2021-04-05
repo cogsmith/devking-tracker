@@ -127,8 +127,6 @@ App.Main = async function () {
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
 
-    console.log({ COLORS: colors, LABELS: labels });
-
     for (let i = 0; i < labelsdata.data.length; i++) {
         let x = labelsdata.data[i];
         //console.log(x);
@@ -137,19 +135,11 @@ App.Main = async function () {
         LOG.INFO('DeleteLabel: ' + x.name);
     }
 
-    console.log({ COLORS: colors, LABELS: labels });
-
     let colorkeys = Object.keys(colors);
     for (let i = 0; i < colorkeys.length; i++) {
         let x = colorkeys[i];
-        //let x = colors[color];
-        //console.log({X:x,COLOR:color});
-        if (!labels[x]) {
-            await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] });
-        }
+        if (!labels[x]) { await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] }); }
     }
-
-    setTimeout(function () { LOG.INFO('TIMEOUT'); }, 1000 * 1);
 }
 
 //

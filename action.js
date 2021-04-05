@@ -43,20 +43,36 @@ colors.STATUS_ACTIVE = '0E8A16';
 colors.STATUS_PENDING = '5319E7';
 colors.STATUS_DONE = 'AAAAAA';
 
-colors.W_1 = '111111';
-colors.W_2 = '222222';
-colors.W_3 = '333333';
-colors.W_4 = '444444';
-colors.W_5 = '555555';
-colors.W_6 = '666666';
-colors.W_7 = '777777';
-colors.W_8 = '888888';
-colors.W_9 = '999999';
-colors.W_A = 'AAAAAA';
-colors.W_B = 'BBBBBB';
-colors.W_C = 'CCCCCC';
-colors.W_D = 'DDDDDD';
-colors.W_E = 'EEEEEE';
+colors.Y_00 = '000000';
+colors.Y_1R = 'FF0000';
+colors.Y_2G = '00FF00';
+colors.Y_3B = '0000FF';
+colors.Y_FF = 'FFFFFF';
+
+colors.ZZ_COLOR_GRAY_00 = '000000';
+colors.ZZ_COLOR_GRAY_03 = '333333';
+colors.ZZ_COLOR_GRAY_06 = '666666';
+colors.ZZ_COLOR_GRAY_09 = '999999';
+colors.ZZ_COLOR_GRAY_12 = 'CCCCCC';
+colors.ZZ_COLOR_GRAY_15 = 'FFFFFF';
+
+colors.ZZ_GH_DARK_0R = 'B60205'
+colors.ZZ_GH_DARK_1O = 'D93F0B'
+colors.ZZ_GH_DARK_2Y = 'FBCA04'
+colors.ZZ_GH_DARK_3G = '0E8A16'
+colors.ZZ_GH_DARK_4C = '006B75'
+colors.ZZ_GH_DARK_5B = '1D76DB'
+colors.ZZ_GH_DARK_6I = '0052CC'
+colors.ZZ_GH_DARK_7V = '5319E7'
+
+colors.ZZ_GH_LITE_0R = 'E99695'
+colors.ZZ_GH_LITE_1O = 'F9D0C4'
+colors.ZZ_GH_LITE_2Y = 'FEF2C0'
+colors.ZZ_GH_LITE_3G = 'C2E0C6'
+colors.ZZ_GH_LITE_4C = 'BFDADC'
+colors.ZZ_GH_LITE_5B = 'C5DEF5'
+colors.ZZ_GH_LITE_6I = 'BFD4F2'
+colors.ZZ_GH_LITE_7V = 'D4C5F9'
 
 colors.Z_0R = 'ff0000'
 colors.Z_1O = 'ff6600'
@@ -67,30 +83,6 @@ colors.Z_5B = '00ccff'
 colors.Z_6I = '0048ff'
 colors.Z_7V = '8000ff'
 colors.Z_8P = 'ff00d9'
-
-colors.Y_00 = '000000';
-colors.Y_1R = 'FF0000';
-colors.Y_2G = '00FF00';
-colors.Y_3B = '0000FF';
-colors.Y_FF = 'FFFFFF';
-
-colors.XDARK_0R = 'B60205'
-colors.XDARK_1O = 'D93F0B'
-colors.XDARK_2Y = 'FBCA04'
-colors.XDARK_3G = '0E8A16'
-colors.XDARK_4C = '006B75'
-colors.XDARK_5B = '1D76DB'
-colors.XDARK_6I = '0052CC'
-colors.XDARK_7V = '5319E7'
-
-colors.XLITE_0R = 'E99695'
-colors.XLITE_1O = 'F9D0C4'
-colors.XLITE_2Y = 'FEF2C0'
-colors.XLITE_3G = 'C2E0C6'
-colors.XLITE_4C = 'BFDADC'
-colors.XLITE_5B = 'C5DEF5'
-colors.XLITE_6I = 'BFD4F2'
-colors.XLITE_7V = 'D4C5F9'
 
 //
 
@@ -133,20 +125,20 @@ App.Main = async function () {
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
 
-    console.log({COLORS:colors,LABELS:labels});
+    console.log({ COLORS: colors, LABELS: labels });
 
-    for (let i=0;i<labelsdata.data.length;i++) {        
+    for (let i = 0; i < labelsdata.data.length; i++) {
         let x = labelsdata.data[i];
         console.log(x);
-        if (colors[x.name]==x.color.toUpperCase()) { labels[x.name] = true; continue; }
-        await octokit.rest.issues.deleteLabel({owner:REPO.owner,repo:REPO.repo,name:x.name});
+        if (colors[x.name] == x.color.toUpperCase()) { labels[x.name] = true; continue; }
+        await octokit.rest.issues.deleteLabel({ owner: REPO.owner, repo: REPO.repo, name: x.name });
     }
 
-    console.log({COLORS:colors,LABELS:labels});
+    console.log({ COLORS: colors, LABELS: labels });
 
-    Object.keys(colors).forEach(x=>{        
+    Object.keys(colors).forEach(x => {
         if (!labels[x]) {
-            octokit.rest.issues.createLabel({owner:REPO.owner,repo:REPO.repo,name:x,color:colors[x]});
+            octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] });
         }
     });
 }

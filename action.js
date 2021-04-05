@@ -141,10 +141,10 @@ App.Init = async function () {
 App.Main = async function () {
     LOG.DEBUG('App.Main');
 
-    App.SetupProject();
-    App.SetupLabels();
+    await App.SetupProject();
+    await App.SetupLabels();
 
-    App.DeletePastRuns(GITHUB_WORKFLOW);
+    await App.DeletePastRuns(GITHUB_WORKFLOW);
 }
 
 //

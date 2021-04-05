@@ -26,8 +26,8 @@ let labels = {};
 
 let colors = {};
 
-colors.ISSUE_BUG = 'D73A4A';
-colors.ISSUE_FEATURE = 'A2EEEF';
+colors.ISSUE_BUG = 'FF0000';
+colors.ISSUE_FEATURE = '0000FF';
 
 colors.TAG_DUPE = 'CFD3D7';
 colors.TAG_GOODFIRST = '7057FF';
@@ -38,7 +38,7 @@ colors.TOPIC_DOCS = '0075CA';
 
 colors.RESULT_NOFIX = 'FFFFFF';
 
-colors.STATUS_TODO = 'ffcc00';
+colors.STATUS_TODO = 'FBCA04';
 colors.STATUS_ACTIVE = '0E8A16';
 colors.STATUS_PENDING = 'ff6600';
 colors.STATUS_DONE = '999999';

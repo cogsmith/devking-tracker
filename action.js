@@ -151,7 +151,9 @@ App.Main = async function () {
     let colorkeys = Object.keys(colors);
     for (let i = 0; i < colorkeys.length; i++) {
         let x = colorkeys[i];
-        if (!labels[x]) { await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] }); }
+        if (!labels[x]) {
+            try { await octokit.rest.issues.createLabel({ owner: REPO.owner, repo: REPO.repo, name: x, color: colors[x] }); } catch (ex) { LOG.ERROR(ex); }
+        }
     }
 }
 

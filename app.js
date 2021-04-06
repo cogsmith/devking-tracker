@@ -150,6 +150,8 @@ App.Main = async function () {
 //
 
 App.SetupProject = async function () {
+    LOG.DEBUG('SetupProject');
+
     let trackerp = false;
 
     let pzdb = {};
@@ -161,7 +163,7 @@ App.SetupProject = async function () {
     }
 
     if (!trackerp) {
-        LOG.DEBUG('SetupProject: TRACKER');
+        LOG.INFO('SetupProject: TRACKER');
         let pdata = await octokit.rest.projects.createForRepo({ owner: REPO.owner, repo: REPO.repo, name: 'TRACKER' }); //console.log(pdata);
         await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'OPEN' });
         await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'TODO' });

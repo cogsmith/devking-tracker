@@ -161,6 +161,7 @@ App.SetupProject = async function () {
         pzdb[p.name] = p;
         if (p.name == 'TRACKER' || p.name.endsWith('-TRACKER')) { trackerp = p; }
     }
+    LOG.DEBUG('RepoProjects: ', Object.keys(pzdb));
 
     if (!trackerp) {
         LOG.INFO('SetupProject: TRACKER');

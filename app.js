@@ -149,7 +149,7 @@ App.Main = async function () {
 
 //
 
-App.SetupProject = function () {
+App.SetupProject = async function () {
     LOG.DEBUG('SetupProject');
 
     let pdata = await octokit.rest.projects.createForRepo({ owner: REPO.owner, repo: REPO.repo, name: 'TRACKER' }); console.log(pdata);

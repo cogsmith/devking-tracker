@@ -141,16 +141,16 @@ App.Init = async function () {
 App.Main = async function () {
     LOG.DEBUG('App.Main');
 
-    await App.SetupProject();
-    await App.SetupLabels();
+    await App.CheckProject();
+    await App.CheckLabels();
 
     await App.DeletePastRuns(GITHUB_WORKFLOW);
 }
 
 //
 
-App.SetupProject = async function () {
-    LOG.DEBUG('SetupProject');
+App.CheckProject = async function () {
+    LOG.DEBUG('CheckProject');
 
     let trackerp = false;
 
@@ -175,8 +175,8 @@ App.SetupProject = async function () {
     }
 }
 
-App.SetupLabels = async function () {
-    LOG.DEBUG('SetupLabels');
+App.CheckLabels = async function () {
+    LOG.DEBUG('CheckLabels');
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
     for (let i = 0; i < labelsdata.data.length; i++) {

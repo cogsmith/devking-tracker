@@ -150,15 +150,26 @@ App.Main = async function () {
 //
 
 App.SetupProject = async function () {
-    LOG.DEBUG('SetupProject');
+    let trackerp = false;
 
-    let pdata = await octokit.rest.projects.createForRepo({ owner: REPO.owner, repo: REPO.repo, name: 'TRACKER' }); console.log(pdata);
-    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'OPEN' });
-    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'TODO' });
-    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'ACTIVE' });
-    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'PENDING' });
-    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'DONE' });
-    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'CLOSED' });
+    let pzdb = {};
+    let pzdata = await octokit.rest.projects.listForRepo({ owner: REPO.owner, repo: REPO.repo });
+    for (let i = 0; i < pzdata.data.length; i++) {
+        let p = pzdata.data[i];
+        pzdb[p.name] = p;
+        if (p.name == 'TRACKER' || p.name.endsWith('-TRACKER')) { trackerp = p; }
+    }
+
+    if (!trackerp) {
+        LOG.DEBUG('SetupProject: TRACKER');
+        let pdata = await octokit.rest.projects.createForRepo({ owner: REPO.owner, repo: REPO.repo, name: 'TRACKER' }); //console.log(pdata);
+        await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'OPEN' });
+        await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'TODO' });
+        await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'ACTIVE' });
+        await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'PENDING' });
+        await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'DONE' });
+        await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'CLOSED' });
+    }
 }
 
 App.SetupLabels = async function () {

@@ -150,11 +150,19 @@ App.Main = async function () {
 //
 
 App.SetupProject = function () {
-    LOG.DEBUG('App.SetupProject');
+    LOG.DEBUG('SetupProject');
+
+    let pdata = await octokit.rest.projects.createForRepo({ owner: REPO.owner, repo: REPO.repo, name: 'TRACKER' }); console.log(pdata);
+    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'OPEN' });
+    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'TODO' });
+    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'ACTIVE' });
+    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'PENDING' });
+    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'DONE' });
+    await octokit.rest.projects.createColumn({ project_id: pdata.data.id, name: 'CLOSED' });
 }
 
 App.SetupLabels = async function () {
-    LOG.DEBUG('App.SetupLabels');
+    LOG.DEBUG('SetupLabels');
 
     let labelsdata = await octokit.rest.issues.listLabelsForRepo(REPO);
     for (let i = 0; i < labelsdata.data.length; i++) {
@@ -162,7 +170,6 @@ App.SetupLabels = async function () {
         LOG.DEBUG('CheckLabel: ' + x.name);
         if (colors[x.name]) {
             labels[x.name] = true;
-
             if (colors[x.name] == x.color.toUpperCase()) { continue; }
             else {
                 LOG.INFO('UpdateLabel: ' + x.name + ' => ' + colors[x.name]);

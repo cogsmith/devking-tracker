@@ -1,4 +1,4 @@
-# DEVKING-TRACKER: GitHub Project Automation
+# 👑 DEVKING-TRACKER: GitHub Project Automation 👑
 ### Setup project tracker board and issue labels
 
 ---
